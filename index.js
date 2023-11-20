@@ -37,7 +37,5 @@ tag3.onmouseover = function () {
   });
 };
 tag3.onmouseout = function () {
-  tag3.innerHTML = 'Moruf'
-}
-
-
+  tag3.innerHTML = "Moruf";
+};
