@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  section {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+  }
+  #text {
+    margin-top: 10%;
+    line-height: -10px;
+    margin-left: 13%;
+  }
+  #text h1 {
+    color: RGB(234, 15, 30);
+    font-size: 150px;
+    font-weight: 700;
+  }
+  #text .tag-1 {
+    color: white;
+  }
+  .image img {
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -40%;
+  }
+  
+  /* About section */
+  
+  .about {
+    background: black;
+  }
+  .aboutsec p {
+    color: white;
+    font-size: 20px;
+    left: 79%;
+    position: fixed;
+    top: 10%;
+  }
+  .aboutsec h1 {
+    color: white;
+    text-align: center;
+    font-size: 130px;
+    font-weight: 545;
+    margin-top: 16%;
+    font-family: Semibold;
+  }
+  .sec-img {
+    background: black;
+  }
+  .sec-img img {
+    width: 80%;
+    margin-left: 20%;
+  }
+  .about-text {
+    height: 180vh;
+  }
+  .hide {
+    display: none;
+  }
+  .about-text h1 {
+    color: white;
+    font-size: 40px;
+    margin-left: 30%;
+    margin-top: 10%;
+    font-weight: 600;
+  }
+  .about-text .size-large {
+    color: white;
+    font-size: 30px;
+    margin-left: 30%;
+    margin-top: 50px;
+  }
+  
+  .about-text p {
+    color: white;
+    font-size: 18px;
+    margin-left: 30%;
+    line-height: 170%;
+    margin-bottom: 3vh;
+    font-family: "Regular";
+  }
+  .about-text .link a {
+    margin-left: 30%;
+    color: red;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: Regular;
+  }
+  /* Works section */
+  .workss {
+    background: whitesmoke;
+    height: 270vh;
+  }
+  
+  .workss h1 {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 50px;
+  }
+  
+  .work img {
+    position: relative;
+    width: 60%;
+    margin-left: 50%;
+  }
+  .work-text a {
+    color: RGB(10, 53, 147);
+    position: absolute;
+    text-decoration: none;
+    font-size: 40px;
+    margin-left: 20%;
+    top: 30%;
+  }
+  .creator-image img {
+    position: relative;
+    width: 50%;
+    margin-top: 10%;
+  }
+  .creator-text a {
+    font-size: 40px;
+    position: absolute;
+    text-decoration: none;
+    color: RGB(55, 201, 136);
+    margin-left: -30%;
+    margin-top: 20%;
+  }
+  .link-image img {
+    position: relative;
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 40px;
+  }
+  .link-text a {
+    position: absolute;
+    text-decoration: none;
+    font-size: 40px;
+    margin-top: 10%;
+    margin-left: 20%;
+    color: RGB(75, 139, 65);
+  }
+  .expre-image img {
+    position: relative;
+    width: 50%;
+    margin-top: 50px;
+  }
+  .expre-text a {
+    position: absolute;
+    text-decoration: none;
+    font-size: 40px;
+    margin-top: 13%;
+    margin-left: -30%;
+  }
+  
+  /* Contact section */
+  .contact {
+    height: 150vh;
+  }
+  .contact-text h1 {
+    font-size: 20px;
+    position: fixed;
+    color: white;
+    left: 79%;
+    top: 10%;
+  }
+  
+  .contact-text h2 {
+    font-size: 120px;
+    color: white;
+    font-family: "Semibold";
+    margin-left: 10%;
+    font-weight: 600;
+  }
+  .let {
+    margin-top: 15%;
+  }
+  .contact-text h3 {
+    color: white;
+    font-size: 40px;
+    margin-left: 20%;
+    margin-top: 60px;
+  }
+  .contact p {
+    color: white;
+    font-size: 20px;
+    margin-left: 20%;
+    line-height: 150%;
+  }
+  .contact-links {
+    margin-top: 30px;
+    line-height: 190%;
+    
+  }
+  .contact-links a {
+    margin-left: 20%;
+    text-decoration: none;
+    font-size: 20px;
+    color: Red;
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .work img,
+  .link-image img {
+    animation: 2s ease-out 0s 1 slideInRight;
+  }
+  .creator-image img,
+  .expre-image img,
+  .link-text {
+    animation: 2s ease-out 0s 1 slideInLeft;
+  }
+  @media screen and (max-width: 480px) {
+    * {
+      margin: 0 !important;
+      
+    }
+    .d-flex {
+      display: block;
+    }
+    #text h1 {
+      /* position: absolute;
+      font-size: 70px;
+      top: 25% !important;
+      left: 10%;
+      line-height: 200% !important; */
+    }
+    #text{
+        position: absolute;
+        top: 25% !important;
+        left: 8px;
+        line-height: 150%;
+    }
+    #text h1{
+        font-size: 80px;
+        
+    }
+    .image img {
+      width: 830px;
+      /* position: relative; */
+    }
+    
+    .aboutsec h1{
+        font-size: 50px;
+        margin-top: 30% !important;
+    }
+    .sec-img{
+        margin-top: -90% !important;
+    }
+    .sec-img img{
+        width: 100%;
+    }
+    .about-text h1 {
+        font-size: 30px;
+        margin-left: 10px !important;
+    }
+    .about-text .size-large {
+        font-size: 25px;
+    }
+    .about-text p{
+        font-size: 18px;
+        margin-left: 10px !important;
+        width: 97% !important;
+    }
+    .about-text .link a{
+        margin-left: 10px !important;
+    }
+    .workss {
+        height: 150vh !important;
+    }
+    .workss h1{
+        font-size: 30px ;
+        margin-left: 30px !important;
+        margin-top: 20px !important;
+    }
+    .work img{
+        margin-top: 10% !important;
+        margin-left: 40px !important;
+        width: 80%;
+    }
+    .work-text a {
+        font-size: 20px;
+        margin-top: 30px !important;
+        margin-left: 40px !important;
+    }
+    .creator-image img{
+        margin-top: 20% !important;
+        margin-left: 40px !important;
+        width: 80%;
+    }
+    .creator-text a{
+        margin-left: -90% !important;
+        font-size: 20px;
+        margin-top: 60% !important;
+    }
+    .link-image img{
+        margin-top: 25% !important;
+        width: 80%;
+        margin-left: 40px !important;
+    }
+    .link-text a{
+        font-size: 20px;
+        margin-top: 268px !important;
+        margin-left: 35px !important;
+    }
+    .expre-image img{
+        margin-top: 25% !important;
+        width: 80%;
+        margin-left: 40px !important;
+    }
+   
+    .expre-text a{
+        margin-left: -90% !important;
+        font-size: 20px;
+        margin-top: 65% !important;
+    }
+    .contact-text{
+        margin-top: 35px !important;
+    }
+    .contact-text h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .contact-text h3{
+        text-align: center;
+        margin-top: 30px !important;
+    }
+    .contact p{
+        font-size: 18px;
+        margin-left: 10px !important;
+        width: 90% ;
+    }
+    .contact-links{
+        margin-left: 10px !important;
+        margin-top: 20px !important;
+    }
+  }
+  
